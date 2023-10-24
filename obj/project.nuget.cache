@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "hMxpvVOyuVGuQ9TpOa6nWWuTIdKEkjk9RU0uDvvnvsY6QBjDbb3NCi9qK18OxOiWfU2ROhRuagSFt0SioL4yeQ==",
+  "dgSpecHash": "HtwvZlHpPyOtiAiOBmc3mP/YZxr+I3SIqjZM+EmbyeH8rwXJSC1VaplanQb3vsRZq7d5JohHsCcnO33AWxCyRA==",
   "success": true,
   "projectFilePath": "/home/acla.hamzah/work/qwiik-test/web-api/web-api.csproj",
   "expectedPackageFiles": [
+    "/home/acla.hamzah/.nuget/packages/autofac/7.1.0/autofac.7.1.0.nupkg.sha512",
     "/home/acla.hamzah/.nuget/packages/microsoft.aspnetcore.openapi/7.0.12/microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
     "/home/acla.hamzah/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/acla.hamzah/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/home/acla.hamzah/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/home/acla.hamzah/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/home/acla.hamzah/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/home/acla.hamzah/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "/home/acla.hamzah/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "/home/acla.hamzah/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

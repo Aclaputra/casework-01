@@ -13,8 +13,7 @@ public class FibonacciController : ControllerBase
         _logger = logger;
     }
 
-    // non nullable ?
-    private static readonly List<dynamic> FizzBuzzResult = new List<dynamic>{};
+    private static readonly Queue<dynamic> FizzBuzzResult = new Queue<dynamic>{};
 
     [HttpGet("{times}", Name = "GetFibonacci")]
     public IEnumerable<dynamic> Get(long times)
@@ -29,19 +28,19 @@ public class FibonacciController : ControllerBase
         {
             if (i % isFizzBuzz == even)
             {
-                FizzBuzzResult.Add("FizzBuzz");
+                FizzBuzzResult.Enqueue("FizzBuzz");
             }
             else if (i % isBuzz == even)
             {
-                FizzBuzzResult.Add("Buzz");
+                FizzBuzzResult.Enqueue("Buzz");
             }
             else if (i % isFizz == even)
             {
-                FizzBuzzResult.Add("Fizz");
+                FizzBuzzResult.Enqueue("Fizz");
             }
             else
             {
-                FizzBuzzResult.Add(i);
+                FizzBuzzResult.Enqueue(i);
             }
         }
 

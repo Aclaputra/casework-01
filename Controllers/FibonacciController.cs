@@ -16,24 +16,38 @@ public class FibonacciController : ControllerBase
     // non nullable ?
     private static readonly List<dynamic> FizzBuzzResult = new List<dynamic>{};
 
-    [HttpGet(Name = "GetFibonacci")]
-    public IEnumerable<dynamic> Get()
+    [HttpGet("{times}", Name = "GetFibonacci")]
+    public IEnumerable<dynamic> Get(long times)
     {
-        for (int i=1; i<=100; i++) {
-            if (i % 15 == 0) {
+        var isFizzBuzz = 15;
+        var isBuzz = 5;
+        var isFizz = 3;
+        var startIndex = 1;
+
+        for (int i = startIndex; i <= times; i++)
+        {
+            if (i % isFizzBuzz == 0)
+            {
                 FizzBuzzResult.Add("FizzBuzz");
                 continue;
-            } else if (i % 5 == 0) {
+            }
+            else if (i % isBuzz == 0)
+            {
                 FizzBuzzResult.Add("Buzz");
                 continue;
-            } else if (i % 3 == 0) {
+            }
+            else if (i % isFizz == 0)
+            {
                 FizzBuzzResult.Add("Fizz");
                 continue;
-            } else {
+            }
+            else
+            {
                 FizzBuzzResult.Add(i);
             }
         }
-        return Enumerable.Range(1,1).Select(index => new Fibonacci(0) 
+
+        return Enumerable.Range(1, 1).Select(index => new Fibonacci(0)
         {
             Result = FizzBuzzResult
         })

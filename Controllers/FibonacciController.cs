@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace web_api.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/v1/[controller]")]
 public class FibonacciController : ControllerBase
 {
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILogger<FibonacciController> _logger;
 
-    public FibonacciController(ILogger<WeatherForecastController> logger)
+    public FibonacciController(ILogger<FibonacciController> logger)
     {
         _logger = logger;
     }
@@ -23,23 +23,21 @@ public class FibonacciController : ControllerBase
         var isBuzz = 5;
         var isFizz = 3;
         var startIndex = 1;
+        var even = 0;
 
         for (int i = startIndex; i <= times; i++)
         {
-            if (i % isFizzBuzz == 0)
+            if (i % isFizzBuzz == even)
             {
                 FizzBuzzResult.Add("FizzBuzz");
-                continue;
             }
-            else if (i % isBuzz == 0)
+            else if (i % isBuzz == even)
             {
                 FizzBuzzResult.Add("Buzz");
-                continue;
             }
-            else if (i % isFizz == 0)
+            else if (i % isFizz == even)
             {
                 FizzBuzzResult.Add("Fizz");
-                continue;
             }
             else
             {
